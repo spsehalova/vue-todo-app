@@ -1,29 +1,33 @@
 # vue-todo-app
 
-This template should help get you started developing with Vue 3 in Vite.
+This is an example Vue app. 
 
-## Recommended IDE Setup
+## Project structure
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+### `/src/`
 
-## Customize configuration
+- assets
+  - All of icons, images and other things that are needed to show on the page and aren't code.
+- components
+  - Reusable components and other parts of the page that we use on multiple pages
+- router
+  - `vue-router` utility folder. All the things needed to Route to other pages
+- stores
+  - `pinia` utility folder. All the things needed to use State Management in our App
+- views
+  - All the pages that we are using in this project
+- App.vue
+  - like `index.html`, but also not. Defines the App page default layout
+- main.js
+  - all of the vue and pinia imports. sets-up vue to make it usable.
+- style.css
+  - *shapes and colours*
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Starting this project
 
-## Project Setup
-
-```sh
-pnpm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-pnpm dev
-```
-
-### Compile and Minify for Production
-
-```sh
-pnpm build
-```
+1. first of all, download the needed dependecies.
+  - Using **NPM** `npm i`
+  - Using **PNPM** `pnpm i`
+2. run it in dev mode
+  - `npm run dev`
+    
